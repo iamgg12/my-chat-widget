@@ -384,13 +384,18 @@
             color: var(--chat-color-primary);
             text-decoration: none;
             font-size: 12px;
-            opacity: 0.8;
-            transition: var(--chat-transition);
+            opacity: 0.5;
+            transition: opacity 0.2s;
             font-family: inherit;
+            display: inline-block;
+            margin: 0 auto;
+            pointer-events: auto;
         }
 
         .chat-assist-widget .chat-footer-link:hover {
             opacity: 1;
+            text-decoration: underline;
+            cursor: pointer;
         }
 
         .chat-assist-widget .suggested-questions {
@@ -651,7 +656,7 @@
                 </button>
             </div>
             <div class="chat-footer">
-                <a class="chat-footer-link" href="${settings.branding.poweredBy.link}" target="_blank">${settings.branding.poweredBy.text}</a>
+                <a class="chat-footer-link" href="https://www.dialogodigital.life" target="_blank" rel="noopener noreferrer">powered by Diálogo Digital</a>
             </div>
         </div>
     `;
